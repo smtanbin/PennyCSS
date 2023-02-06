@@ -1,0 +1,123 @@
+// Margin utility mixin
+
+@mixin margin-variant($start: 0, $size: $unit-1) {
+  @for $i from $start to $mixin-end {
+    .m-#{$i} {
+      margin: $i * $size + 0rem !important;
+    }
+
+    .mb-#{$i} {
+      margin-bottom: $i * $size !important;
+    }
+
+    .ml-#{$i} {
+      margin-left: $i * $size !important;
+    }
+
+    .mr-#{$i} {
+      margin-right: $i * $size !important;
+    }
+
+    .mt-#{$i} {
+      margin-top: $i * $size !important;
+    }
+
+    .mx-#{$i} {
+      margin-left: $i * $size !important;
+      margin-right: $i * $size !important;
+    }
+
+    .my-#{$i} {
+      margin-bottom: $i * $size + 0rem !important;
+      margin-top: $i * $size + 0rem !important;
+    }
+  }
+}
+
+// Padding utility mixin
+@mixin padding-variant($start: 0, $size: $unit-1) {
+  @for $i from $start to $mixin-end {
+    .p-#{$i} {
+      padding: $i * $size + 0rem !important;
+    }
+
+    .pb-#{$i} {
+      padding-bottom: $i * $size !important;
+    }
+
+    .pl-#{$i} {
+      padding-left: $i * $size !important;
+    }
+
+    .pr-#{$i} {
+      padding-right: $i * $size !important;
+    }
+
+    .pt-#{$i} {
+      padding-top: $i * $size !important;
+    }
+
+    .px-#{$i} {
+      padding-left: $i * $size !important;
+      padding-right: $i * $size !important;
+    }
+
+    .py-#{$i} {
+      padding-bottom: $i * $size + 0rem !important;
+      padding-top: $i * $size + 0rem !important;
+    }
+  }
+}
+// width utility mixin
+
+.wf {
+  width: 100% !important;
+}
+.wh {
+  width: 50% !important;
+}
+.wq {
+  width: 25% !important;
+}
+.wz {
+  width: 0% !important;
+}
+.wvf {
+  width: 100vw !important;
+}
+.wvh {
+  width: 50vw !important;
+}
+.wvq {
+  width: 25vw !important;
+}
+.wvz {
+  width: 0vw !important;
+}
+
+// Hight
+
+.hf {
+  height: 100% !important;
+}
+.hh {
+  height: 50% !important;
+}
+.hq {
+  height: 25% !important;
+}
+.hz {
+  height: 0% !important;
+}
+.hvf {
+  height: 100vh !important;
+}
+.hvh {
+  height: 50vh !important;
+}
+.hvq {
+  height: 25vh !important;
+}
+.hvz {
+  height: 0vh !important;
+}

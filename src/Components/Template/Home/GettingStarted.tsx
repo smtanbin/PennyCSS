@@ -13,7 +13,7 @@ const Introduction = () => {
         <strong>Penny </strong>
         is a new lightweight, responsive and modern CSS framework that foke Spectre.css from for faster and extensible development.
       </p>
-      <p>Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.
+      <p>Penny provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.
       </p>
     </section>
   )

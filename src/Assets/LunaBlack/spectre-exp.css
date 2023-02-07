@@ -75,8 +75,8 @@
   padding: 1rem;
 }
 .form-autocomplete .form-autocomplete-input.is-focused {
-  box-shadow: 0 0 0 0.1rem rgba(73, 11, 61, 0.2);
-  border-color: #490b3d;
+  box-shadow: 0 0 0 0.1rem rgba(0, 121, 173, 0.2);
+  border-color: #0079ad;
 }
 .form-autocomplete .form-autocomplete-input .form-input {
   border-color: transparent;
@@ -166,21 +166,21 @@
   width: 1.4rem;
 }
 .calendar .calendar-date .date-item.date-today {
-  border-color: #f7ccef;
-  color: #490b3d;
+  border-color: #e0f6ff;
+  color: #0079ad;
 }
 .calendar .calendar-date .date-item:focus {
-  box-shadow: 0 0 0 0.1rem rgba(73, 11, 61, 0.2);
+  box-shadow: 0 0 0 0.1rem rgba(0, 121, 173, 0.2);
 }
 .calendar .calendar-date .date-item:focus, .calendar .calendar-date .date-item:hover {
-  background: #fbe6f7;
-  border-color: #f7ccef;
-  color: #490b3d;
+  background: white;
+  border-color: #e0f6ff;
+  color: #0079ad;
   text-decoration: none;
 }
 .calendar .calendar-date .date-item:active, .calendar .calendar-date .date-item.active {
-  background: #3c0932;
-  border-color: #26061f;
+  background: #006e9e;
+  border-color: #005c84;
   color: #fff;
 }
 .calendar .calendar-date .date-item.badge::after {
@@ -205,7 +205,7 @@
   position: relative;
 }
 .calendar .calendar-range::before {
-  background: #f9d9f3;
+  background: #effaff;
   content: "";
   height: 1.4rem;
   left: 0;
@@ -221,12 +221,12 @@
   right: 50%;
 }
 .calendar .calendar-range.range-start .date-item, .calendar .calendar-range.range-end .date-item {
-  background: #3c0932;
-  border-color: #26061f;
+  background: #006e9e;
+  border-color: #005c84;
   color: #fff;
 }
 .calendar .calendar-range .date-item {
-  color: #490b3d;
+  color: #0079ad;
 }
 .calendar.calendar-lg .calendar-body {
   padding: 0;
@@ -279,8 +279,7 @@
 }
 
 .carousel .carousel-locator:nth-of-type(8):checked ~ .carousel-container .carousel-item:nth-of-type(8), .carousel .carousel-locator:nth-of-type(7):checked ~ .carousel-container .carousel-item:nth-of-type(7), .carousel .carousel-locator:nth-of-type(6):checked ~ .carousel-container .carousel-item:nth-of-type(6), .carousel .carousel-locator:nth-of-type(5):checked ~ .carousel-container .carousel-item:nth-of-type(5), .carousel .carousel-locator:nth-of-type(4):checked ~ .carousel-container .carousel-item:nth-of-type(4), .carousel .carousel-locator:nth-of-type(3):checked ~ .carousel-container .carousel-item:nth-of-type(3), .carousel .carousel-locator:nth-of-type(2):checked ~ .carousel-container .carousel-item:nth-of-type(2), .carousel .carousel-locator:nth-of-type(1):checked ~ .carousel-container .carousel-item:nth-of-type(1) {
-  -webkit-animation: carousel-slidein 0.75s ease-in-out 1;
-          animation: carousel-slidein 0.75s ease-in-out 1;
+  animation: carousel-slidein 0.75s ease-in-out 1;
   opacity: 1;
   z-index: 100;
 }
@@ -309,8 +308,7 @@
   padding-bottom: 56.25%;
 }
 .carousel .carousel-container .carousel-item {
-  -webkit-animation: carousel-slideout 1s ease-in-out 1;
-          animation: carousel-slideout 1s ease-in-out 1;
+  animation: carousel-slideout 1s ease-in-out 1;
   height: 100%;
   left: 0;
   margin: 0;
@@ -370,31 +368,12 @@
   width: 100%;
 }
 
-@-webkit-keyframes carousel-slidein {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 @keyframes carousel-slidein {
   0% {
     transform: translateX(100%);
   }
   100% {
     transform: translateX(0);
-  }
-}
-@-webkit-keyframes carousel-slideout {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(-50%);
   }
 }
 @keyframes carousel-slideout {
@@ -474,8 +453,7 @@
   left: 0.8rem;
 }
 .comparison-slider .comparison-resizer {
-  -webkit-animation: first-run 1.5s 1 ease-in-out;
-          animation: first-run 1.5s 1 ease-in-out;
+  animation: first-run 1.5s 1 ease-in-out;
   cursor: ew-resize;
   height: 0.8rem;
   left: 0;
@@ -497,26 +475,7 @@
   position: absolute;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
-}
-
-@-webkit-keyframes first-run {
-  0% {
-    width: 0;
-  }
-  25% {
-    width: 2.4rem;
-  }
-  50% {
-    width: 0.8rem;
-  }
-  75% {
-    width: 1.2rem;
-  }
-  100% {
-    width: 0;
-  }
 }
 
 @keyframes first-run {
@@ -537,7 +496,7 @@
   }
 }
 .filter .filter-tag#tag-8:checked ~ .filter-nav .chip[for=tag-8], .filter .filter-tag#tag-7:checked ~ .filter-nav .chip[for=tag-7], .filter .filter-tag#tag-6:checked ~ .filter-nav .chip[for=tag-6], .filter .filter-tag#tag-5:checked ~ .filter-nav .chip[for=tag-5], .filter .filter-tag#tag-4:checked ~ .filter-nav .chip[for=tag-4], .filter .filter-tag#tag-3:checked ~ .filter-nav .chip[for=tag-3], .filter .filter-tag#tag-2:checked ~ .filter-nav .chip[for=tag-2], .filter .filter-tag#tag-1:checked ~ .filter-nav .chip[for=tag-1], .filter .filter-tag#tag-0:checked ~ .filter-nav .chip[for=tag-0] {
-  background: #490b3d;
+  background: #0079ad;
   color: #fff;
 }
 
@@ -620,7 +579,7 @@
   position: fixed;
   top: 0;
   transition: transform 0.25s;
-  z-index: 300;
+  z-index: 200;
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   left: 0;
@@ -784,10 +743,10 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: #fdf2fb;
+  background: #f0faff;
   border: 0;
   border-radius: 1rem;
-  color: #490b3d;
+  color: #0079ad;
   height: 0.2rem;
   position: relative;
   width: 100%;
@@ -797,29 +756,19 @@
   border-radius: 1rem;
 }
 .progress::-webkit-progress-value {
-  background: #490b3d;
+  background: #0079ad;
   border-radius: 1rem;
 }
 .progress::-moz-progress-bar {
-  background: #490b3d;
+  background: #0079ad;
   border-radius: 1rem;
 }
 .progress:indeterminate {
-  -webkit-animation: progress-indeterminate 1.5s linear infinite;
-          animation: progress-indeterminate 1.5s linear infinite;
-  background: #fdf2fb linear-gradient(to right, #490b3d 30%, #fdf2fb 30%) top left/150% 150% no-repeat;
+  animation: progress-indeterminate 1.5s linear infinite;
+  background: #f0faff linear-gradient(to right, #0079ad 30%, #f0faff 30%) top left/150% 150% no-repeat;
 }
 .progress:indeterminate::-moz-progress-bar {
   background: transparent;
-}
-
-@-webkit-keyframes progress-indeterminate {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
 }
 
 @keyframes progress-indeterminate {
@@ -840,7 +789,7 @@
   height: 1.2rem;
 }
 .slider:focus {
-  box-shadow: 0 0 0 0.1rem rgba(73, 11, 61, 0.2);
+  box-shadow: 0 0 0 0.1rem rgba(0, 121, 173, 0.2);
   outline: none;
 }
 .slider.tooltip:not([data-tooltip])::after {
@@ -848,7 +797,7 @@
 }
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  background: #490b3d;
+  background: #0079ad;
   border: 0;
   border-radius: 50%;
   height: 0.6rem;
@@ -858,7 +807,7 @@
   width: 0.6rem;
 }
 .slider::-moz-range-thumb {
-  background: #490b3d;
+  background: #0079ad;
   border: 0;
   border-radius: 50%;
   height: 0.6rem;
@@ -867,7 +816,7 @@
   width: 0.6rem;
 }
 .slider::-ms-thumb {
-  background: #490b3d;
+  background: #0079ad;
   border: 0;
   border-radius: 50%;
   height: 0.6rem;
@@ -897,25 +846,25 @@
   transform: scale(1);
 }
 .slider::-webkit-slider-runnable-track {
-  background: #fdf2fb;
+  background: #f0faff;
   border-radius: 1rem;
   height: 1rem;
   width: 100%;
 }
 .slider::-moz-range-track {
-  background: #fdf2fb;
+  background: #f0faff;
   border-radius: 1rem;
   height: 1rem;
   width: 100%;
 }
 .slider::-ms-track {
-  background: #fdf2fb;
+  background: #f0faff;
   border-radius: 1rem;
   height: 1rem;
   width: 100%;
 }
 .slider::-ms-fill-lower {
-  background: #490b3d;
+  background: #0079ad;
 }
 
 .timeline .timeline-item {
@@ -950,7 +899,7 @@
   width: 1.2rem;
 }
 .timeline .timeline-item .timeline-icon::before {
-  border: 1rem solid #490b3d;
+  border: 1rem solid #0079ad;
   border-radius: 50%;
   content: "";
   display: block;
@@ -961,7 +910,7 @@
   width: 0.4rem;
 }
 .timeline .timeline-item .timeline-icon.icon-lg {
-  background: #490b3d;
+  background: #0079ad;
   line-height: 1.2rem;
 }
 .timeline .timeline-item .timeline-icon.icon-lg::before {
@@ -1108,7 +1057,7 @@
 }
 
 .styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
-  background: rgba(73, 11, 61, 0.1);
+  background: rgba(0, 121, 173, 0.1);
 }
 
 .styled-scrollbars::-webkit-scrollbar-track { /* Background */

@@ -68,6 +68,14 @@
     }
   }
 }
+// z-index utility mixin
+@mixin z-index-variant($start: 0, $size: $zindex-1) {
+  @for $i from $start to $mixin-end {
+    .z-#{$i} {
+      z-index: $i * $size !important;
+    }
+  }
+}
 // width utility mixin
 
 .wf {

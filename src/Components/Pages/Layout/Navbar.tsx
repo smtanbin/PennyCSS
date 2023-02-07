@@ -1,4 +1,4 @@
-import logo from "../../../Assets/Img/starlingLogo.png"
+import logo from "../../../Assets/Img/SVG/starlingLogo.svg"
 import ReactCodeSinppet from "react-code-snippet"
 
 const Navbar = () => {
@@ -7,6 +7,7 @@ const Navbar = () => {
             <Introduction />
             <RagulerNavbar />
             <CenterNavbar />
+            <ElevatedNav />
         </div>
     )
 }
@@ -63,6 +64,7 @@ const CenterNavbar = () => {
   </section>
   <section class="navbar-center">
     <!-- centered logo or brand -->
+    <img src={logo} className="navbar-brand img-fit-contain mx-2 " />
   </section>
   <section class="navbar-section">
     <a href="#" class="btn btn-link">Twitter</a>
@@ -97,6 +99,118 @@ const CenterNavbar = () => {
                 search box or any combination of those elements. Each section with the{" "}
                 <span className="mark">navbar-section</span> class will be evenly
                 distributed in the container.
+            </p>
+        </div>
+    )
+}
+const ElevatedNav = () => {
+    return (
+        <div className="container m-2 p-4 bg-gray s-rounded ">
+            <ReactCodeSinppet
+
+                lang="jsx"
+                code={`<header class="navbar navbar-elevated">
+                    <section class="navbar-section">
+                        <a href="#" class="">
+                            <img src={logo} class="navbar-logo img-fit-contain" />
+                        </a>
+                        <div class="dropdown">
+                            <a href="#" class="btn btn-link dropdown-toggle" >
+                                Dropdown <i class="icon icon-caret"></i>
+                            </a>
+                            {/* <!-- menu component --> */}
+                            <ul class="menu">
+                                <li class="menu-item">
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" />
+                                        <i class="form-icon"></i> form-checkbox
+                                    </label>
+                                </li>
+                                {/* <!-- menu divider --> */}
+                                <li class="divider"></li>
+                                {/* <!-- menu item with badge --> */}
+                                <li class="menu-item">
+                                    <a href="#">
+                                        <i class="icon icon-link"></i> Settings
+                                    </a>
+                                    <div class="menu-badge">
+                                        <label class="label label-primary">2</label>
+                                    </div>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="#">My profile</a>
+                                    <div class="menu-badge">
+                                        <label class="form-checkbox">
+                                            <input type="checkbox" />
+                                            <i class="form-icon"></i> Public
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section className="navbar-section">
+                        <div className="input-group input-inline">
+                            <input className="form-input" type="text" placeholder="search" />
+                            <button className="btn btn-primary input-group-btn">Search</button>
+                        </div>
+                    </section>
+                </header>`}
+            >
+                <header className="navbar navbar-elevated">
+                    <section className="navbar-section">
+                        <a href="#" className="">
+                            <img src={logo} className="navbar-logo img-fit-contain" />
+                        </a>
+                        <div className="dropdown">
+                            <a href="#" className="btn btn-link dropdown-toggle" >
+                                Dropdown <i className="icon icon-caret"></i>
+                            </a>
+                            {/* <!-- menu component --> */}
+                            <ul className="menu">
+                                <li className="menu-item">
+                                    <label className="form-checkbox">
+                                        <input type="checkbox" />
+                                        <i className="form-icon"></i> form-checkbox
+                                    </label>
+                                </li>
+                                {/* <!-- menu divider --> */}
+                                <li className="divider"></li>
+                                {/* <!-- menu item with badge --> */}
+                                <li className="menu-item">
+                                    <a href="#">
+                                        <i className="icon icon-link"></i> Settings
+                                    </a>
+                                    <div className="menu-badge">
+                                        <label className="label label-primary">2</label>
+                                    </div>
+                                </li>
+
+                                <li className="menu-item">
+                                    <a href="#">My profile</a>
+                                    <div className="menu-badge">
+                                        <label className="form-checkbox">
+                                            <input type="checkbox" />
+                                            <i className="form-icon"></i> Public
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section className="navbar-section">
+                        <div className="input-group input-inline">
+                            <input className="form-input" type="text" placeholder="search" />
+                            <button className="btn btn-primary input-group-btn">Search</button>
+                        </div>
+                    </section>
+                </header>
+            </ReactCodeSinppet>
+            <p>
+
             </p>
         </div>
     )

@@ -31,7 +31,7 @@ $off-canvas-breakpoint: $size-lg !default;
     position: fixed;
     top: 0;
     transition: transform 0.25s;
-    z-index: $zindex-3;
+    z-index: $zindex-2;
     border-radius: $unit-h;
     box-shadow: $elevation-material;
     @if $rtl == true {

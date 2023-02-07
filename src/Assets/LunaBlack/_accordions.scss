@@ -15,18 +15,27 @@
 
   .accordion-header {
     display: block;
-    padding: $unit-1 $unit-2;
+    padding: $unit-2 $unit-3;
 
     .icon {
-      transition: transform .25s;
+      transition: transform 0.5s;
     }
+  }
+
+  .accordion-header:hover {
+    background-color: $secondary-color;
+    border-radius: $unit-h;
+    transition: ease-in-out 0.25s;
   }
 
   .accordion-body {
     margin-bottom: $layout-spacing;
     max-height: 0;
     overflow: hidden;
-    transition: max-height .25s;
+    transition: max-height 0.5s;
+  }
+  ul {
+    margin-left: $unit-3;
   }
 }
 

@@ -8,15 +8,16 @@ import '../src/Assets/LunaBlack/spectre-exp.css'
 
 
 // Component
-import Template from './Components/Template/Template'
+import DefaultRouter from './Routes/Router';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    
-  {/* // Online CSS */}
+
+    {/* // Online CSS */}
     {/* <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css" /> */}
     {/* <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css" /> */}
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css" />
-  <Template/>
+    <DefaultRouter />
+
   </React.StrictMode>,
 )

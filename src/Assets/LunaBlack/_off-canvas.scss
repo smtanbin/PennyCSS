@@ -22,14 +22,18 @@ $off-canvas-breakpoint: $size-lg !default;
   }
 
   .off-canvas-sidebar {
-    background: $bg-color;
+    background: rgba($bg-color, 0.4);
+    margin: $unit-2 0 $unit-2 $unit-2;
+    backdrop-filter: blur($unit-5);
     bottom: 0;
     min-width: 10rem;
     overflow-y: auto;
     position: fixed;
     top: 0;
     transition: transform 0.25s;
-    z-index: $zindex-2;
+    z-index: $zindex-3;
+    border-radius: $unit-h;
+    box-shadow: $elevation-material;
     @if $rtl == true {
       right: 0;
       transform: translateX(100%);
@@ -39,6 +43,11 @@ $off-canvas-breakpoint: $size-lg !default;
     }
   }
 
+  .off-canvas-sidebar-full {
+    margin: 0 !important;
+    border-radius: 0 !important;
+  }
+
   .off-canvas-content {
     flex: 1 1 auto;
     height: 100%;
@@ -46,11 +55,11 @@ $off-canvas-breakpoint: $size-lg !default;
   }
 
   .off-canvas-overlay {
-    background: rgba($dark-color, 0.1);
+    // background: rgba($bg-color, 0.1);
     border-color: transparent;
     border-radius: 0;
     bottom: 0;
-    display: none;
+    display: block;
     height: 100%;
     left: 0;
     position: fixed;

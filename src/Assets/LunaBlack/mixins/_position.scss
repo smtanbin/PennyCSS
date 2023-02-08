@@ -35,36 +35,36 @@
 }
 
 // Padding utility mixin
-@mixin padding-variant($start: 0, $size: $unit-1) {
-  @for $i from $start to $mixin-end {
+@mixin padding-variant() {
+  @for $i from 0 to $mixin-end {
     .p-#{$i} {
-      padding: $i * $size + 0rem !important;
+      padding: $i * $unit-1 + 0rem !important;
     }
 
     .pb-#{$i} {
-      padding-bottom: $i * $size !important;
+      padding-bottom: $i * $unit-1 !important;
     }
 
     .pl-#{$i} {
-      padding-left: $i * $size !important;
+      padding-left: $i * $unit-1 !important;
     }
 
     .pr-#{$i} {
-      padding-right: $i * $size !important;
+      padding-right: $i * $unit-1 !important;
     }
 
     .pt-#{$i} {
-      padding-top: $i * $size !important;
+      padding-top: $i * $unit-1 !important;
     }
 
     .px-#{$i} {
-      padding-left: $i * $size !important;
-      padding-right: $i * $size !important;
+      padding-left: $i * $unit-1 !important;
+      padding-right: $i * $unit-1 !important;
     }
 
     .py-#{$i} {
-      padding-bottom: $i * $size + 0rem !important;
-      padding-top: $i * $size + 0rem !important;
+      padding-bottom: $i * $unit-1 + 0rem !important;
+      padding-top: $i * $unit-1 + 0rem !important;
     }
   }
 }

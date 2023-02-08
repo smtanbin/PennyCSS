@@ -12,7 +12,7 @@ const Template = () => {
             <br />
             <br />
             <div className="off-canvas">
-                <div id="sidebar-id" className="off-canvas-sidebar off-canvas-sidebar-full z-4">
+                <div id="sidebar-id" className="off-canvas-sidebar off-canvas-sidebar-full">
                     <Sidenav />
                 </div>
                 {/* <a className="off-canvas-overlay" href="#close"></a> */}

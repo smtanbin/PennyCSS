@@ -41,6 +41,6 @@
 }
 
 // Spacing
-@include margin-variant(0, 0);
-@include padding-variant(0, 0);
+@include margin-variant();
+@include padding-variant();
 @include z-index-variant();

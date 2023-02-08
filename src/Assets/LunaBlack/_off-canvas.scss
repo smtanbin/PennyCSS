@@ -13,7 +13,7 @@ $off-canvas-breakpoint: $size-lg !default;
     position: absolute;
     top: $layout-spacing;
     transition: none;
-    z-index: $zindex-0;
+    // z-index: $zindex-0;
     @if $rtl == true {
       right: $layout-spacing;
     } @else {

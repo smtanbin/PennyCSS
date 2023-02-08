@@ -19,7 +19,7 @@ const RagulerNavbar = () => {
                 <ReactCodeSinppet
                     lang="jsx"
                     code={`   
-                <header class="navbar m-4 ">
+                <header class="navbar m-4">
                     <section class="navbar-section">
                         <a href="#navbar" class="navbar-brand text-bold mr-2">Navbar</a>
                         <a href="#navbar" class="btn btn-link">Docs</a>
@@ -105,11 +105,10 @@ const CenterNavbar = () => {
 }
 const ElevatedNav = () => {
     return (
-        <div className="container m-2 p-4 bg-gray s-rounded ">
+        <div className="container m-2 p-4 bg-gray s-rounded">
             <ReactCodeSinppet
-
                 lang="jsx"
-                code={`<header class="navbar navbar-elevated">
+                code={`<header class="navbar navbar-elevated ">
                     <section class="navbar-section">
                         <a href="#" class="">
                             <img src={logo} class="navbar-logo img-fit-contain" />
@@ -151,7 +150,7 @@ const ElevatedNav = () => {
                         </div>
                     </section>
 
-                    <section className="navbar-section">
+                    <section className="navbar-section hide-sm">
                         <div className="input-group input-inline">
                             <input className="form-input" type="text" placeholder="search" />
                             <button className="btn btn-primary input-group-btn">Search</button>
@@ -159,13 +158,13 @@ const ElevatedNav = () => {
                     </section>
                 </header>`}
             >
-                <header className="navbar navbar-elevated">
+                <header className="navbar navbar-elevated z-1">
+                    <a href="#" className="">
+                        <img src={logo} className="navbar-logo img-fit-contain" />
+                    </a>
                     <section className="navbar-section">
-                        <a href="#" className="">
-                            <img src={logo} className="navbar-logo img-fit-contain" />
-                        </a>
                         <div className="dropdown">
-                            <a href="#" className="btn btn-link dropdown-toggle" >
+                            <a href="#" className="btn btn-link dropdown-toggle">
                                 Dropdown <i className="icon icon-caret"></i>
                             </a>
                             {/* <!-- menu component --> */}
@@ -201,17 +200,17 @@ const ElevatedNav = () => {
                         </div>
                     </section>
 
-                    <section className="navbar-section">
-                        <div className="input-group input-inline">
+                    <section className="navbar-section ">
+                        <div className="input-group input-inline hide-sm">
                             <input className="form-input" type="text" placeholder="search" />
-                            <button className="btn btn-primary input-group-btn">Search</button>
+                            <button className="btn btn-primary input-group-btn">
+                                Search
+                            </button>
                         </div>
                     </section>
                 </header>
             </ReactCodeSinppet>
-            <p>
-
-            </p>
+            <p></p>
         </div>
     )
 }

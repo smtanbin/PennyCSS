@@ -77,6 +77,9 @@ const Layout = () => {
           <li className="menu-item">
             <Link to={'Navbar'}>Navbar</Link>
           </li>
+          <li className="menu-item">
+            <Link to={'Hero'}>Hero</Link>
+          </li>
         </ul>
       </div>
 

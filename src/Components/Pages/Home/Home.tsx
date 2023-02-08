@@ -4,7 +4,7 @@ const Home = () => {
     <section>
       <Hero />
       <Introduction />
-      <Introduction />
+
     </section>
   )
 }
